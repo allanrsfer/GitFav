@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Roboto', sans-serif;
+  --text-color: #fff;
+
+  --bg-color: #000;
+  --hsl: 195;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body * {
+  font-family: var(--ff-primary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  width: 1120px;
+  padding: 13rem 16rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8.7rem;
+  gap: 40rem;
+}
+
+header img {
+  width: 18.6rem;
+  height: 3.2rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.search input {
+  height: 4.8rem;
+  width: 46.2rem;
+  background-color: #06181C;
+  padding: .8rem;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.search button {
+  width: 17rem;
+  height: 4.8rem;
+  
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: .5rem;
+
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+
+  background: #065E7C;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.search button svg{
+  width: 2.4rem;
+  height: 3.4rem;
+}
+
+.search button:hover, .search button:hover svg path {
+  background: #fff;
+  color: #065E7C;
+  fill: #065E7C;
+}
+
+table{
+  width: 122rem;
+  max-height: 66.8rem;
+  border-spacing: 0;
+  border-radius: 1.2rem;
+}
+
+table * {
+  font-size: 2rem;
+}
+
+table th {
+  text-align: left;
+  font-weight: normal;
+  background: hsla(var(--hsl), 72%, 13%, 1);
+  padding: 1.6rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1.2rem;
+}
+
+table tr:nth-child(odd){
+  background: hsla(var(--hsl), 61%, 7%);
+}
+
+table tr:nth-child(even) {
+  background: hsla(var(--hsl), 61%, 9%);
+}
+
+table td {
+  padding: 2.8rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  color: #fff;
+}
+
+td.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+
+td.user a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.733);
+  font-weight: normal;
+}
+
+td.user a p{
+  color: #fff;
+  font-weight: bold;
+}
+
+button.remove {
+  background: none;
+  border:none;
+  color: red;
+  cursor: pointer;
+}
